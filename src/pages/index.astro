@@ -2,9 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
+import Timeline from "../components/Timeline.astro";
+
+const title='Greg Gossett';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout>
   <Hero />
   <main>
     <h1>Welcome to <span class="text-gradient">Astro</span></h1>
@@ -36,6 +39,7 @@ import Hero from "../components/Hero.astro";
       />
     </ul>
   </main>
+  <Timeline />
 </Layout>
 
 <style>
