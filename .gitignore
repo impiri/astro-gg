@@ -20,3 +20,6 @@ pnpm-debug.log*
 
 # what is this even?
 .temp.*
+
+# Local Netlify folder
+.netlify
