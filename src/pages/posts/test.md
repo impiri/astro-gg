@@ -6,7 +6,7 @@ image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'The Astro logo with the word One.'
 tags: ['test']
-layout: '/src/layouts/BlogLayout.astro'
+layout: '@blog'
 ---
 # My First Blog Post
 

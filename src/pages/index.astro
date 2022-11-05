@@ -1,13 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Contact from "../components/Contact.astro";
-import Hero from "../components/Hero.astro";
-import Timeline from "../components/Timeline.astro";
+import Layout from "@layouts/Layout.astro";
+import Contact from "@components/Contact.astro";
+import Hero from "@components/Hero.astro";
+import Timeline from "@components/Timeline.astro";
 
-const title='Greg Gossett';
+const pageTitle = 'Greg Gossett';
+const pageDescription = 'The personal website of Greg Gossett, a UX designer and developer in Durham, NC.'
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
   <Hero />
   <Timeline />
   <Contact />
