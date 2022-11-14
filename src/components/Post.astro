@@ -16,7 +16,7 @@ const {frontmatter, url} = Astro.props;
 		<div class="flex items-center justify-between mt-4">
 			<a href={url} class="text-sm text-semibold hover:underline dark:text-cyan-400">Read more</a>
 			<div>
-				<p class="text-sm font-semibold dark:text-gray-400">3 min read</p>
+				<p class="text-sm font-semibold dark:text-gray-400">{frontmatter.minutesRead}</p>
 			</div>
 		</div>
 	</div>
