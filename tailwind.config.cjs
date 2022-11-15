@@ -10,6 +10,10 @@ module.exports = {
       }
     },
     extend: {},
+    fontFamily: {
+      sans: ['FigtreeVariable', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      display: ['FigtreeVariable', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
