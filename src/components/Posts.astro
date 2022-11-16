@@ -2,11 +2,11 @@
 import Post from '@components/Post.astro';
 const posts = await Astro.glob('../pages/posts/*.md');
 ---
-<section class="dark:bg-gray-800 dark:text-gray-100">
+<section>
 	<div class="container py-12 mx-auto">
 		<div class="grid gap-4 mx-4 sm:grid-cols-12">
 			<div class="col-span-12 sm:col-span-3">
-				<div class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-cyan-400 before:my-2">
+				<div class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-cyan-400 before:my-2">
 					<h2 class="text-3xl font-semibold">Recent posts</h2>
 				</div>
 			</div>

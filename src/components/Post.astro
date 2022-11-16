@@ -2,21 +2,21 @@
 const {frontmatter, url} = Astro.props;
 ---
 
-<a href={url} class="container block max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900 dark:hover:shadow-cyan-300/50 dark:hover:shadow-glow dark:text-gray-100 transition-shadow">
+<a href={url} class="container block max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-gray-100 dark:bg-gray-900 hover:shadow-cyan-300/50 hover:shadow-glow dark:text-gray-100 transition-shadow">
   <div class="flex items-center justify-between">
-    <span class="text-sm font-semibold dark:text-gray-400">{frontmatter.date.slice(0,10)}</span>
-    <p class="text-sm font-semibold uppercase space-x-4 dark:text-gray-400">{frontmatter.tags.map(((tag: string) => (
+    <span class="text-sm font-semibold text-gray-600 dark:text-gray-400">{frontmatter.date.slice(0,10)}</span>
+    <p class="text-sm font-semibold uppercase space-x-4 text-gray-600 dark:text-gray-400">{frontmatter.tags.map(((tag: string) => (
       <span>{tag}</span>
     )))}</p>
   </div>
   <div class="mt-3">
-    <p class="text-2xl dark:text-cyan-400 font-bold hover:underline">{frontmatter.title}</p>
+    <p class="text-2xl text-cyan-600 dark:text-cyan-400 font-bold hover:underline">{frontmatter.title}</p>
     <p class="mt-2">{frontmatter.description}</p>
   </div>
   <div class="flex items-center justify-between mt-4">
-    <p class="text-sm text-semibold hover:underline dark:text-cyan-400">Read more</p>
+    <p class="text-sm text-semibold hover:underline text-cyan-600 dark:text-cyan-400">Read more</p>
     <div>
-      <p class="text-sm font-semibold dark:text-gray-400">{frontmatter.minutesRead}</p>
+      <p class="text-sm font-semibold text-gray-600 dark:text-gray-400">{frontmatter.minutesRead}</p>
     </div>
   </div>
 </a>
