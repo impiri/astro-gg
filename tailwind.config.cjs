@@ -9,7 +9,11 @@ module.exports = {
         'lg': '1024px',
       }
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'glow': '0 0 10px rgba(0,0,0,0.3);',
+      }
+    },
     fontFamily: {
       sans: ['FigtreeVariable', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       display: ['FigtreeVariable', 'ui-sans-serif', 'system-ui', 'sans-serif'],
