@@ -1,72 +1,138 @@
-<section>
-	<div class="container py-12 mx-auto">
-		<div class="grid gap-4 mx-4 sm:grid-cols-12">
-			<div class="col-span-12 sm:col-span-3">
-				<div class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-cyan-400 before:my-2">
-					<h2 class="text-3xl font-semibold">Work history</h2>
-				</div>
-			</div>
-			<div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-				<div class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-200 before:dark:bg-gray-700">
-					<div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
-						<h3 class="text-xl font-semibold">Research Square Company, Durham, NC</h3>
-						<p class="text-md text-gray-800 dark:text-gray-200">UX/UI Designer (2016-2022)</p>
-						<p class="text-md text-gray-800 dark:text-gray-200">Front-End Developer (2012-2016)</p>
-							<ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
-								<li>Managed design and user experience for American Journal Experts, an international brand with particular focus on the United States and China.</li>
-								<li>Gathered usage data, prioritized issues, created user flows, wireframes, and mockups, and assisted engineers during development.</li>
-								<li>Led design for a refresh of internal tools used to perform core business functions.</li>
-								<li>Created implementation-ready designs for customer-facing websites and tools.</li>
-								<li>Led split-testing efforts for end-user experiences.</li>
-								<li>Owned design and metrics for the AJE website and checkout process which facilitated millions of dollars of orders annually.</li>
-								<li>Worked closely with colleagues across product, marketing, engineering, support, and operations to identify and achieve business goals.</li>
-								<li>Somehow missed out on the branded sweatpants giveaway in year six.</li>
-							</ul>
-					</div>
-					<div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
-						<h3 class="text-xl font-semibold">Virante, Morrisville, NC</h3>
-						<p class="text-md text-gray-800 dark:text-gray-200">Creative Director (2009-2012)</p>
-						<p class="text-md text-gray-800 dark:text-gray-200">Senior Developer (2007-2009)</p>
-							<ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
-								<li>Managed a small team of developers.</li>
-								<li>Worked with a wide variety of clients to identify website issues and opportunities.</li>
-								<li>Designed, developed, and maintained client websites and internal web applications.</li>
-								<li>Set team priorities and schedules for development work.</li>
-								<li>Got an amazing Mega Man cake when I left.</li>
-							</ul>
-					</div>
-					<div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
-						<h3 class="text-xl font-semibold">Newfangled, Carrboro, NC</h3>
-						<p class="text-md text-gray-800 dark:text-gray-200">Web Developer (2006-2007)</p>
-							<ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
-								<li>Created, maintained, and updated websites based on a proprietary PHP/MySQL content management system.</li>
-								<li>Took designs from Photoshop mockups to full HTML/CSS designs and integrated them with a PHP backend.</li>
-								<li>Walked across the street to Cat's Cradle for concerts.</li>
-							</ul>
-					</div>
-					<div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
-						<h3 class="text-xl font-semibold">Medfusion, Raleigh, NC</h3>
-						<p class="text-md text-gray-800 dark:text-gray-200">Graphic Designer and Junior Sysadmin (2005-2006)</p>
-							<ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
-								<li>Created and edited graphics and layouts for medical websites.</li>
-								<li>Managed nameservers and several web servers running Red Hat Enterprise Linux and Apache.</li>
-								<li>Resolved network and other computer-related issues for employees and clients.</li>
-								<li>Created a new PHP-based corporate website with emphases on standards compliance and accessibility.</li>
-								<li>Drove 40 minutes to and from work and vowed never to do that again.</li>
-							</ul>
-					</div>
-					<div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
-						<h3 class="text-xl font-semibold">Lighthouse Computers, Gaffney, SC</h3>
-						<p class="text-md text-gray-800 dark:text-gray-200">Computer Technician (Summers 2002-2005)</p>
-							<ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
-								<li>Fixed all sorts of PC issues for all sorts of people.</li>
-								<li>Built custom PCs, set up business networks, and removed countless viruses.</li>
-								<li>Got to work with my dad.</li>
-								<li>Promised that I'd keep this	job on my résumé. (Check.)</li>
-							</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+---
+import Section from '@components/Section.astro';
+---
+
+<Section sectionTitle="Work history">
+  <div
+    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-200 before:dark:bg-gray-700"
+  >
+    <div
+      class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400"
+    >
+      <h3 class="text-xl font-semibold">Research Square Company, Durham, NC</h3>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        UX/UI Designer (2016-2022)
+      </p>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Front-End Developer (2012-2016)
+      </p>
+      <ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
+        <li>
+          Managed design and user experience for American Journal Experts, an
+          international brand with particular focus on the United States and
+          China.
+        </li>
+        <li>
+          Gathered usage data, prioritized issues, created user flows,
+          wireframes, and mockups, and assisted engineers during development.
+        </li>
+        <li>
+          Led design for a refresh of internal tools used to perform core
+          business functions.
+        </li>
+        <li>
+          Created implementation-ready designs for customer-facing websites and
+          tools.
+        </li>
+        <li>Led split-testing efforts for end-user experiences.</li>
+        <li>
+          Owned design and metrics for the AJE website and checkout process
+          which facilitated millions of dollars of orders annually.
+        </li>
+        <li>
+          Worked closely with colleagues across product, marketing, engineering,
+          support, and operations to identify and achieve business goals.
+        </li>
+        <li>
+          Somehow missed out on the branded sweatpants giveaway in year six.
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400"
+    >
+      <h3 class="text-xl font-semibold">Virante, Morrisville, NC</h3>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Creative Director (2009-2012)
+      </p>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Senior Developer (2007-2009)
+      </p>
+      <ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
+        <li>Managed a small team of developers.</li>
+        <li>
+          Worked with a wide variety of clients to identify website issues and
+          opportunities.
+        </li>
+        <li>
+          Designed, developed, and maintained client websites and internal web
+          applications.
+        </li>
+        <li>Set team priorities and schedules for development work.</li>
+        <li>Got an amazing Mega Man cake when I left.</li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400"
+    >
+      <h3 class="text-xl font-semibold">Newfangled, Carrboro, NC</h3>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Web Developer (2006-2007)
+      </p>
+      <ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
+        <li>
+          Created, maintained, and updated websites based on a proprietary
+          PHP/MySQL content management system.
+        </li>
+        <li>
+          Took designs from Photoshop mockups to full HTML/CSS designs and
+          integrated them with a PHP backend.
+        </li>
+        <li>Walked across the street to Cat's Cradle for concerts.</li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400"
+    >
+      <h3 class="text-xl font-semibold">Medfusion, Raleigh, NC</h3>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Graphic Designer and Junior Sysadmin (2005-2006)
+      </p>
+      <ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
+        <li>Created and edited graphics and layouts for medical websites.</li>
+        <li>
+          Managed nameservers and several web servers running Red Hat Enterprise
+          Linux and Apache.
+        </li>
+        <li>
+          Resolved network and other computer-related issues for employees and
+          clients.
+        </li>
+        <li>
+          Created a new PHP-based corporate website with emphases on standards
+          compliance and accessibility.
+        </li>
+        <li>
+          Drove 40 minutes to and from work and vowed never to do that again.
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400"
+    >
+      <h3 class="text-xl font-semibold">Lighthouse Computers, Gaffney, SC</h3>
+      <p class="text-md text-gray-800 dark:text-gray-200">
+        Computer Technician (Summers 2002-2005)
+      </p>
+      <ul class="list-disc text-gray-600 dark:text-gray-400 mx-3">
+        <li>Fixed all sorts of PC issues for all sorts of people.</li>
+        <li>
+          Built custom PCs, set up business networks, and removed countless
+          viruses.
+        </li>
+        <li>Got to work with my dad.</li>
+        <li>Promised that I'd keep this job on my résumé. (Check.)</li>
+      </ul>
+    </div>
+  </div>
+</Section>
