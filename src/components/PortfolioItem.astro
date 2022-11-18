@@ -1,0 +1,11 @@
+---
+const {name, description, url, image} = Astro.props;
+---
+
+<a href={url} class="container block mx-auto rounded-lg shadow-sm bg-gray-100 dark:bg-gray-900 hover:shadow-cyan-300/50 hover:shadow-glow dark:text-gray-100 transition-shadow">
+  <img role="presentation" class="object-cover w-full rounded-t-lg h-44 dark:bg-gray-500" src={image}>
+  <div class="mt-3 px-6 py-2 pb-6">
+    <p class="text-2xl text-cyan-600 dark:text-cyan-400 font-bold hover:underline">{name}</p>
+    <p class="mt-2">{description}</p>
+  </div>
+</a>
